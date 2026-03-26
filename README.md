@@ -1,8 +1,9 @@
-🔍 Digital Forensics Lab – Kali Linux
-🔍 Laboratorio de Forense Digital – Kali Linux
+## 🔍 Digital Forensics Lab – Kali Linux
+## 🔍 Laboratorio de Forense Digital – Kali Linux
+
 👨‍💻 Author / Autor
 Carlos Pinto
-Esteban Saldaña
+
 
 ---
 
