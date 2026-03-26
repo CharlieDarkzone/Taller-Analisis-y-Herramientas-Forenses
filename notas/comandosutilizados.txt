@@ -1,0 +1,88 @@
+# 🧪 Comandos Utilizados – Taller de Forense Digital
+
+## 🔐 1. Preparación
+
+# Descomprimir wordlist rockyou
+
+sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
+
+# Verificar existencia de wordlist
+
+ls /usr/share/wordlists/
+
+---
+
+## 📦 2. Crackeo de archivo ZIP
+
+# Ataque de fuerza bruta con diccionario
+
+fcrackzip lagrimas.zip -u -D -p /usr/share/wordlists/rockyou.txt
+
+---
+
+## 📄 3. Crackeo de archivo PDF
+
+# Extraer hash del PDF
+
+pdf2john reporte_protected.pdf > passpdf
+
+# Crackear contraseña con John the Ripper
+
+john passpdf --wordlist=/usr/share/wordlists/rockyou.txt
+
+# Mostrar contraseña encontrada
+
+john --show passpdf
+
+---
+
+## 🕵️ 4. Esteganografía
+
+# Ataque de fuerza bruta sobre imagen
+
+stegcracker sticker.jpg /usr/share/wordlists/rockyou.txt
+
+# Extracción de contenido oculto
+
+steghide extract -sf sticker.jpg
+
+---
+
+## 🔍 5. Análisis de archivos
+
+# Identificar tipo de archivo
+
+file sticker.jpg
+
+# Analizar contenido binario
+
+binwalk sticker.jpg
+
+# Buscar cadenas de texto
+
+strings sticker.jpg
+
+# Analizar archivo extraído
+
+file tumismo
+strings tumismo
+
+---
+
+## 🧬 6. Análisis de metadatos
+
+# Obtener metadatos de imagen
+
+exiftool sticker.jpg
+
+# Análisis de imagen con geolocalización
+
+exiftool picture.jpg
+
+---
+
+## 🧠 Notas
+
+* Se utilizó la wordlist rockyou.txt para ataques de diccionario
+* Se aplicaron técnicas de fuerza bruta y esteganografía
+* Se analizaron metadatos para obtener información de origen
