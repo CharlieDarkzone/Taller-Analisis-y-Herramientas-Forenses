@@ -77,11 +77,12 @@ Este laboratorio demuestra cómo técnicas como la esteganografía y el uso de c
 
 ## 📸 Evidencias
 
-![Crack ZIP](evidencias/zip_crack.png)
-![Crack PDF](evidencias/pdf_crack.png)
-![Stegcracker](evidencias/stegcracker.png)
-![Steghide](evidencias/steghide.png)
-![Exiftool](evidencias/exiftool.png)
+![Crack ZIP](evidencias/01_zip_crack.png)
+![Crack PDF](evidencias/02_pdf_crack.png)
+![Stegcracker](evidencias/03_stegcracker.png)
+![Steghide](evidencias/04_steghide.png)
+![Strings](evidencias/05_strings.png)
+![Exiftool](evidencias/06_exiftool.png)
 
 ---
 
